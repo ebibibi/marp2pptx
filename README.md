@@ -1,6 +1,14 @@
 # marp2pptx
 
+[日本語](README.ja.md) | [中文](README.zh.md) | [한국어](README.ko.md)
+
 Convert [Marp](https://marp.app/) Markdown slides to PowerPoint (.pptx) with **auto-sizing fonts**.
+
+## Why?
+
+Marp is great for writing slides in Markdown — but its built-in PPTX export produces files with an awkward internal structure that makes them practically unusable for further editing. Shapes are placed in ways that don't match how PowerPoint natively organizes content, text boxes behave unexpectedly, and the overall structure feels like an afterthought rather than a first-class output format.
+
+**marp2pptx** takes a different approach: instead of converting Marp's HTML rendering to PPTX, it parses the Markdown directly and builds the PowerPoint from scratch using python-pptx. The result is a clean, editable PPTX with properly structured shapes, auto-sized fonts that maximize readability, and full CJK support.
 
 ## Features
 
