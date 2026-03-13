@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "marp2pptx"
+version = "0.1.0"
+description = "Convert Marp Markdown slides to PowerPoint with auto-sizing fonts"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Masahiko Ebisuda", email = "masahiko.ebisuda@gmail.com" },
+]
+keywords = ["marp", "markdown", "powerpoint", "pptx", "slides", "presentation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business",
+]
+dependencies = [
+    "python-pptx>=0.6.21",
+    "Pillow>=9.0",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+marp2pptx = "marp2pptx.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/ebibibi/marp2pptx"
+Repository = "https://github.com/ebibibi/marp2pptx"
+Issues = "https://github.com/ebibibi/marp2pptx/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

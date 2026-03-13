@@ -1,0 +1,38 @@
+# marp2pptx default design configuration
+# Place a copy named <slides>.yaml next to your .md file to customize.
+
+# Slide dimensions (inches, 16:9)
+slide:
+  width: 13.33
+  height: 7.5
+  margin: 0.55
+
+# Colors (hex)
+colors:
+  accent: "#0078D4"
+  accent_dark: "#243A5E"
+  text: "#323130"
+  gray: "#606060"
+  white: "#FFFFFF"
+  code_bg: "#F5F5F5"
+  table_header_bg: "#E8F0FE"
+
+# Tag colors for <span class="tag-xxx">
+tag_colors:
+  onpre: "#2E7D32"
+  cloud: "#1565C0"
+  saas: "#C62828"
+
+# Fonts
+fonts:
+  main: "Meiryo"
+  mono: "Consolas"
+
+# Font size ranges per slide class: [title_max, body_min, body_max]
+font_ranges:
+  lead: [48, 18, 32]
+  point: [54, 20, 42]
+  default: [40, 14, 36]
+  small: [36, 12, 28]
+  x-small: [32, 11, 24]
+  xx-small: [28, 10, 22]
